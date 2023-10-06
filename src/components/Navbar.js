@@ -24,11 +24,13 @@ export default class Navbar extends Component {
           <ul className='text-center space-x-4 inline-flex'>
             <li><a href='/home'>Home</a></li>
 
-            <li><a href='/search' onClick={this.handleSearchClick}>
+            <li><a className='cursor-pointer' onClick={this.handleSearchClick}>
             Search
             </a>
             </li>
+            {isSearchClicked && (
             <li><textarea className='' placeholder='Enter username' rows='1'/></li>
+            )}
             <li><a href='/AboutUs'>About us</a></li>
             <li><a href='/Help'>Help</a></li>
           </ul>

@@ -1,3 +1,4 @@
+import ComTickets from './components/ComTickets';
 import GuideLines from './components/GuideLines';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -9,7 +10,7 @@ function App() {
   return (
     <div>
     <Navbar/>
-      <Register/>
+    <ComTickets/>
     </div>
   );
 }
