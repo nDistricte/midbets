@@ -1,11 +1,14 @@
 import React from 'react'
+import Background from './background'
 
  
 export default function Register() {
     
   return (
-    <div className='min-h-screen flex items-center justify-center bg-white'>
-    <div className='bg-white p-8 rounded shadow-md w-96'>
+    <>
+    <Background/>
+    <div className='min-h-screen ml-14 flex items-center justify-center'>
+    <div className='bg-white p-8 rounded-lg shadow-md w-96'>
     <h2 className='text-2xl font-semibold mb-6'>Register</h2>
     <form className='mb-2'>
     <label htmlFor='Username' className='block text-gray-600'>Username</label>
@@ -60,6 +63,7 @@ export default function Register() {
     </form>
     </div>    
     </div>
+    </>
   )
 }
 
